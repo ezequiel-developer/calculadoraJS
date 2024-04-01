@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/imagens/calculadora (1).png" type="image/png">
+    <title>Calculadora JS</title>
+    <script src="assets/js/calculadora.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <h1>calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+            <tbody>
+
+                <tr>
+                    <td><button class="btn" id="limpar-btn" onclick="limpar()"
+                            style="background-color: #f76e13; transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';">C</button></td>
+                    <td><button class="btn" id="apagar-btn" onclick="apagar()"
+                            style="background-color: #f76e13;  transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';">
+                            <</button>
+                    </td>
+                    <td><button class="btn" onclick="inserir('/')"
+                            style="background-color: #FB9A2E;  transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';">/</button></td>
+                    <td><button class="btn" onclick="inserir('*')"
+                            style="background-color: #FB9A2E;  transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';">*</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn" onclick="inserir('7')">7</button></td>
+                    <td><button class="btn" onclick="inserir('8')">8</button></td>
+                    <td><button class="btn" onclick="inserir('9')">9</button></td>
+                    <td><button class="btn" onclick="inserir('-')"
+                            style="background-color: #FB9A2E;  transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn" onclick="inserir('4')">4</button></td>
+                    <td><button class="btn" onclick="inserir('5')">5</button></td>
+                    <td><button class="btn" onclick="inserir('6')">6</button></td>
+                    <td><button class="btn" onclick="inserir('+')"
+                            style="background-color: #FB9A2E;  transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn" onclick="inserir('1')">1</button></td>
+                    <td><button class="btn" onclick="inserir('2')">2</button></td>
+                    <td><button class="btn" onclick="inserir('3')">3</button></td>
+
+                    <td rowspan="2"><button class="btn" id="igual-btn"
+                            style="height: 130px; background-color: #f76e13;  transition: transform 0.3s;"
+                            onmouseover="this.style.transform = 'scale(1.1)';"
+                            onmouseout="this.style.transform = 'scale(1)';" onclick="calcular()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="btn" style="width: 130px;" onclick="inserir('0')">0</button></td>
+                    <td><button class="btn" onclick="inserir('.')">.</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
